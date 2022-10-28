@@ -1,12 +1,6 @@
-package com.asherbakov.transport;
+package com.asherbakov.hw1_2.transport;
 
-public class Transport {
-//    protected String brand;
-//    protected String model;
-//    protected String color;
-//    protected int productionYear;
-//    protected String productionCountry;
-//    protected int maxSpeed;
+public abstract class Transport {
 
     private String brand;
     private String model;
@@ -15,6 +9,7 @@ public class Transport {
     private String productionCountry;
     private int maxSpeed;
     protected final String EMPTY_STRING_VALUE = "параметр не задан";
+    protected abstract String refill();
 
     public Transport(String brand, String model, String color, int productionYear, String productionCountry, int maxSpeed) {
         setColor(color);

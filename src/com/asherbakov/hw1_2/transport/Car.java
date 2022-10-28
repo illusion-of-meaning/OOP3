@@ -1,11 +1,10 @@
-package com.asherbakov.transport;
+package com.asherbakov.hw1_2.transport;
 
-import com.asherbakov.transport.enums.BodyType;
-import com.asherbakov.transport.enums.TiresType;
-import com.asherbakov.transport.enums.Transmission;
+import com.asherbakov.hw1_2.transport.enums.BodyType;
+import com.asherbakov.hw1_2.transport.enums.TiresType;
+import com.asherbakov.hw1_2.transport.enums.Transmission;
 
 import java.time.LocalDate;
-import java.util.Objects;
 import java.util.regex.Pattern;
 
 public class Car extends Transport {
@@ -17,6 +16,11 @@ public class Car extends Transport {
     private TiresType tiresType;
     private Key key;
     private Insurance insurance;
+
+    @Override
+    protected String refill() {
+        return "Можно заправлять бензином, дизелем на заправке или заряжать на специальных электроду-парковках, если это электрокар";
+    }
 
     public class Key {
         private boolean remoteEngineStart;
