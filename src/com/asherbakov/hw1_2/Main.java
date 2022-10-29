@@ -49,14 +49,13 @@ public class Main {
         System.out.println(trainLeningrad);
 
         System.out.println("===ДЗ 1, задание 3===");
-        Bus busPaz4234 = new Bus("ПАЗ", "4234", "Белый",2018, "Россия", 95);
-        Bus busVector = new Bus("ГАЗ", "Вектор Next 8.8", "Синий",2022, "Россия", 100);
-        Bus busKavz4235 = new Bus("КАВЗ", "4235", "Красный",2020, "Россия", 100);
+        Bus busPaz4234 = new Bus("ПАЗ", "4234", "Белый", 2018, "Россия", 95);
+        Bus busVector = new Bus("ГАЗ", "Вектор Next 8.8", "Синий", 2022, "Россия", 100);
+        Bus busKavz4235 = new Bus("КАВЗ", "4235", "Красный", 2020, "Россия", 100);
         Bus[] buses = {busPaz4234, busVector, busKavz4235};
         for (Bus bus : buses) {
             System.out.println(bus);
         }
-
 
     }
 }
